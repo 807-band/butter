@@ -1,0 +1,26 @@
+{
+  "name": "butter",
+  "version": "1.0.0",
+  "description": "we figured out how to run this for free.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:react": "cd frontend && npm i && npm run build",
+    "build:lambda": "npm i && npx netlify-lambda build functions",
+    "prod": "npm run build:react; npm run build:lambda"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/807-band/butter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/807-band/butter/issues"
+  },
+  "homepage": "https://github.com/807-band/butter#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
