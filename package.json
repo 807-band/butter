@@ -4,7 +4,7 @@
   "description": "we figured out how to run this for free.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "netlify-lambda serve functions",
     "build:react": "cd frontend && npm i && npm run build",
     "build:lambda": "npm i && npx netlify-lambda build functions",
     "prod": "npm run build:react; npm run build:lambda"
@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/807-band/butter#readme",
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "netlify-lambda": "^2.0.2"
   }
 }
