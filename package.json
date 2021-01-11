@@ -22,5 +22,9 @@
   "homepage": "https://github.com/807-band/butter#readme",
   "devDependencies": {
     "netlify-lambda": "^2.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.11.11"
   }
 }

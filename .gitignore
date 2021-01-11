@@ -3,3 +3,4 @@ lambda/
 
 # Local Netlify folder
 .netlify
+.env
