@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Header from './components/Header'
 import SideNav from './components/SideNav'
+import Stations from './pages/stations'
 import { Container, Col, Row } from 'react-bootstrap';
 
 const App = () => {
@@ -25,6 +26,9 @@ const App = () => {
               <Route exact path='/'>
                 <h1>Hi 807.band!</h1>
                 <p>ping? {message}</p>
+              </Route>
+              <Route exact path='/stations'>
+                <Stations/>
               </Route>
             </Switch>
           </Col>
